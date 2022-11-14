@@ -4,10 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <title>Quiz Game</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="intro py-3 bg-white text-center">
+      <div class="container">
+        <h2 class="text-primary display-2 my-4">
+          Could you pass the U.S. citizenship exam?
+        </h2>
+      </div>
+    </div>
+
+    <div class="quiz py-4 bg-primary">
+      <div class="container">
+        <h2 class="my-5 text-white">
+          Lets start with the top questions used on the exam...
+        </h2>
+
+        <form class="quiz-form text-light">
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              1. How many amendments does the Constitution have??
+            </p>
+            <div class="form-check my-2 text-white-60">
+              <input type="radio" name="q1" value="A" />
+              <label class="form-check-label">33</label>
+            </div>
+            <div class="form-check my-2 text-white-60">
+              <input type="radio" name="q1" value="B" />
+              <label class="form-check-label">27</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              2. What is the supreme law of the land?
+            </p>
+            <div class="form-check my-2 text-white-60">
+              <input type="radio" name="q2" value="A" />
+              <label class="form-check-label"
+                >The Declaration of Independence</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-60">
+              <input type="radio" name="q2" value="B" />
+              <label class="form-check-label">The Constitution</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              3. Which is true? Why do some states have more Representatives
+              than other states?
+            </p>
+            <div class="form-check my-2 text-white-60">
+              <input type="radio" name="q3" value="A" />
+              <label class="form-check-label"
+                >(because) they have more people</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-60">
+              <input type="radio" name="q3" value="B" />
+              <label class="form-check-label"
+                >(because) they bring in more money from state taxes</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              4. When is the last day you can send in federal income tax forms?*
+            </p>
+            <div class="form-check my-2 text-white-60">
+              <input type="radio" name="q4" value="A" />
+              <label class="form-check-label">March 31st</label>
+            </div>
+            <div class="form-check my-2 text-white-60">
+              <input type="radio" name="q4" value="B" />
+              <label class="form-check-label">April 15th</label>
+            </div>
+          </div>
+          <div class="text-center">
+            <input type="submit" class="btn btn-light" />
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
