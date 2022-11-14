@@ -21,8 +21,18 @@ form.addEventListener("submit", (e) => {
       score += 25;
     }
   });
-
-  scorePercent.textContent = `${score}%`;
+  //show the result on the page
+  scrollTo(0, 0);
 
   result.classList.remove("d-none");
+
+  let output = 0;
+  const timer = setInterval(() => {
+    scorePercent.textContent = `${output}%`;
+    if (output === score) {
+      clearInterval(timer);
+    } else {
+      output++;
+    }
+  }, 10);
 });
