@@ -1,6 +1,8 @@
 const correctAnswers = ["B", "B", "A", "B"];
 
 const form = document.querySelector(".quiz-form");
+const result = document.querySelector(".result");
+const scorePercent = document.querySelector("#score-percent");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -20,5 +22,7 @@ form.addEventListener("submit", (e) => {
     }
   });
 
-  console.log(score);
+  scorePercent.textContent = `${score}%`;
+
+  result.classList.remove("d-none");
 });
